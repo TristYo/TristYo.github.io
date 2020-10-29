@@ -62,8 +62,13 @@
   }).catch(console.error);
     
     
-    var gmsl_spec = "https://raw.githubusercontent.com/TristYo/FIT3179-Data-Visualisation/master/GMSL.json";
+    var gmsl_spec = "https://raw.githubusercontent.com/TristYo/FIT3179-Data-Visualisation/master/area_co2.json";
     vegaEmbed('#vis_gmsl',gmsl_spec).then(function(result){
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+    
+    var co2_spec = "https://raw.githubusercontent.com/TristYo/FIT3179-Data-Visualisation/master/GMSL.json";
+    vegaEmbed('#vis_co2',co2_spec).then(function(result){
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>    
